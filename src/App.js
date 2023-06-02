@@ -17,7 +17,10 @@ function App() {
   }
   function importUser() {
     axios
-      .post("http://localhost:5000", { username: value, password: value })
+      .post("https://test-oonline.onrender.com/", {
+        username: value,
+        password: value,
+      })
       .then((res) => console.log(res.data));
   }
 
