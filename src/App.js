@@ -2,9 +2,9 @@ import "./App.css";
 import axios from "axios";
 function App() {
   function handleReq() {
-    axios.get("http://localhost:3001").then((res) => {
-      console.log(res);
-    });
+    axios
+      .get("https://test-oonline.onrender.com/")
+      .then((res) => console.log(res.data));
   }
   return (
     <div className="App">
